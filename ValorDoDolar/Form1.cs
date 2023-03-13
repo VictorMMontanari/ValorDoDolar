@@ -14,10 +14,10 @@ namespace ValorDoDolar
             double diferenca = (dolar2 - dolar1) / dolar1 * 100;
             double resultado = (diferenca / 1000 * 100) * 100;
 
-            string verdadeiro = "Dolar compensa Comprar", falso = "Dolar Não compensa";
+            string verdadeiro = "Dolar compensa Comprar", falso = "Dolar NÃ£o compensa";
             string verificar = dolar1 > dolar2 ? verdadeiro : falso;
 
-            label2.Text = resultado.ToString();
+            label2.Text = resultado.ToString() + "%";
 
             label1.Text = verificar;
         }
