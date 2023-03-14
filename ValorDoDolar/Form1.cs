@@ -20,6 +20,10 @@ namespace ValorDoDolar
             label2.Text = resultado.ToString() + "%";
 
             label1.Text = verificar;
+
+            double real = Convert.ToDouble(textBox3.Text);
+            double convert = real / dolar2;
+            label5.Text = convert.ToString();
         }
     }
 }
